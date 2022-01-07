@@ -82,9 +82,6 @@ export default function App() {
         setMining(true)
         await waveTxn.wait();
         setMining(false);
-
-        // fetch current length of waves
-        // await getWaveCount();
       } else {
         console.log("Ethereum object doesn't exist!");
       }
@@ -159,7 +156,6 @@ export default function App() {
 
   useEffect(() => {
     checkIfWalletIsConnected();
-    // getWaveCount();
     getAllWaves();
   }, [])
 
